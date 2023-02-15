@@ -9,10 +9,6 @@
         "vscode": {
             "extensions": [
                 "editorconfig.editorconfig",
-                "ryannaddy.laravel-artisan",
-                "amiralizadeh9480.laravel-extra-intellisense",
-                "stef-k.laravel-goto-controller",
-                "codingyu.laravel-goto-view",
                 "mikestead.dotenv",
                 "eg2.tslint",
                 "christian-kohler.path-intellisense",
