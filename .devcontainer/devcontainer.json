@@ -8,12 +8,16 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "editorconfig.editorconfig",
-                "mikestead.dotenv",
-                "eg2.tslint",
-                "christian-kohler.path-intellisense",
-                "esbenp.prettier-vscode",
-                "CoenraadS.bracket-pair-colorizer"
+              "gruntfuggly.todo-tree",
+              "eamodio.gitlens",
+              "gitkraken.gitkraken-authentication",
+              "cweijan.vscode-mysql-client2",
+              "esbenp.prettier-vscode",
+              "whatwedo.twig",
+              "marcostazi.vs-code-drupal",
+              "github.copilot",
+              "vscode-icons-team.vscode-icons",
+              "xdebug.php-debug"
             ],
             "settings": {
                 "#terminal.integrated.shell.linux": "/bin/bash"
