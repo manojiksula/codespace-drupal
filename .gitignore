@@ -1,0 +1,10 @@
+!.gitkeep
+!**/.gitkeep
+.DS_Store
+.Trash*
+.vscode*
+personal/
+static_assets
+patches
+vendor/
+docroot/
