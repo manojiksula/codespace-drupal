@@ -8,12 +8,18 @@
     "customizations": {
         "vscode": {
             "extensions": [
-              "gruntfuggly.todo-tree",
-              "cweijan.vscode-mysql-client2",
-              "esbenp.prettier-vscode",
-              "whatwedo.twig",
-              "marcostazi.vs-code-drupal",
-              "xdebug.php-debug"
+                "editorconfig.editorconfig",
+                "mikestead.dotenv",
+                "eg2.tslint",
+                "christian-kohler.path-intellisense",
+                "esbenp.prettier-vscode",
+                "CoenraadS.bracket-pair-colorizer",
+                "gruntfuggly.todo-tree",
+                "cweijan.vscode-mysql-client2",
+                "esbenp.prettier-vscode",
+                "whatwedo.twig",
+                "marcostazi.vs-code-drupal",
+                "xdebug.php-debug"
             ],
             "settings": {
                 "#terminal.integrated.shell.linux": "/bin/bash"
