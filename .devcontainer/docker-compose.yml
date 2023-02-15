@@ -32,7 +32,7 @@ services:
     image: adminer:standalone
     restart: unless-stopped
     ports:
-      - 8082:8082
+      - 8082:8080
     links:
       - db:db
     depends_on:
