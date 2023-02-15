@@ -32,7 +32,7 @@ services:
     image: adminer:standalone
     restart: unless-stopped
     ports:
-      - 8080:8080
+      - 8082:8082
     links:
       - db:db
     depends_on:
@@ -42,6 +42,8 @@ services:
   solr:
     image: solr:7-slim
     restart: unless-stopped
+    ports:
+      - 8983:8983
     volumes:
       - ./docker/solr-conf/7.x:/solr-conf/conf
     entrypoint:
@@ -51,6 +53,8 @@ services:
     depends_on:
       - app
       - db
+    networks:
+      - front
   mailhog:
     image: mailhog/mailhog
     ports:

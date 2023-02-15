@@ -21,13 +21,19 @@
         "#terminal.integrated.shell.linux": "/bin/bash"
     },
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    "forwardPorts": [80,8080],
+    "forwardPorts": [80,8082,8983],
 
     // Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "cp .env.default .env && composer install",
 	"portsAttributes": {
 		"80": {
 			"label": "HTTP"
-		}
+		},
+        "8082": {
+            "label": "Adminer"
+        },
+        "8983": {
+            "label": "Solr"
+        }
 	},
 }
