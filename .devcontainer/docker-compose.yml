@@ -24,6 +24,18 @@ services:
         MYSQL_USER: d9
         MYSQL_PASSWORD: d9
         MYSQL_ROOT_PASSWORD: d9root
+  solr:
+    image: solr:7-slim
+    restart: unless-stopped
+    volumes:
+      - ./docker/solr-conf/7.x:/solr-conf/conf
+    entrypoint:
+      - bash
+      - "-c"
+      - "precreate-core default /solr-conf; exec solr -f"
+    depends_on:
+      - app
+      - db
   # db:
   #   image: postgres:13
   #   restart: unless-stopped
