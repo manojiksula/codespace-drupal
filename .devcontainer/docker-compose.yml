@@ -15,6 +15,7 @@ services:
         APACHE_DOCUMENT_ROOT: /workspace/public
   db:
     image: percona:5.7.22
+    build: ./docker/db
     restart: true
     ports:
         - 3306:3306
